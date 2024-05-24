@@ -4,9 +4,13 @@
 // hint.
 
 // I AM NOT DONE
+use std::io;
+
 
 fn main() {
-    let x;
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("not work");
+    let x:i32 = input.trim().parse().expect("not work!");
     if x == 10 {
         println!("x is ten!");
     } else {
